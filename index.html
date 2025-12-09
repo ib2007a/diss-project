@@ -10,6 +10,64 @@
 </head>
 
 <body>
+  <!-- Warning Overlay -->
+  <div id="warning-overlay"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 99999; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2em; box-sizing: border-box; font-family: 'Courier New', monospace; overflow-y: auto;">
+    <div
+      style="border: 4px solid #ff0000; padding: 40px; max-width: 800px; background: rgba(20, 0, 0, 0.9); box-shadow: 0 0 50px rgba(255, 0, 0, 0.3); margin: auto;">
+      <h1 style="color: #ff0000; font-size: 3em; margin-bottom: 20px; text-transform: uppercase;">
+        تنويه هام</h1>
+
+      <div id="warning-text" style="font-size: 1.5em; line-height: 1.6; direction: rtl;">
+        <p style="color: #ffeb3b; margin-bottom: 15px; font-weight: bold;">
+
+        </p>
+
+        <p
+          style="color: #00ffff; margin-bottom: 20px; font-size: 1.1em; border: 1px dashed #00ffff; padding: 10px; border-radius: 5px; background: rgba(0, 255, 255, 0.1);">
+          تنويه: هذه المقدمة أمدني بها الزميل "محمد البطاط" مشكوراً؛ ولمن يرغب في تعلم كيفية تصميم هذه المقدمة نفسها
+          بالخطوات (أو لرؤية المصدر الأصلي لهذا الإبداع)، يمكنكم مشاهدة الفيديو المرفق في الصفحة التالية.
+        </p>
+
+        <button id="show-more-btn"
+          onclick="document.getElementById('code-of-honor').style.display='block'; this.style.display='none';"
+          style="background: none; border: none; color: #fff; text-decoration: underline; cursor: pointer; font-size: 1em; margin: 20px 0; color: #00ffff;">
+          عرض المزيد (ميثاق الشرف للمبرمج) ▼
+        </button>
+
+        <div id="code-of-honor" style="display: none;">
+          <hr style="border-color: #ff0000; margin: 20px 0;">
+          <h2 style="color: #ff0000; font-size: 1.8em; margin-bottom: 15px;">ميثاق الشرف للمبرمج: النزاهة قبل الكود</h2>
+          <div style="color: #ffeb3b; text-align: right;">
+            <p style="margin-bottom: 10px;">تعتمد برمجة الحاسوب في جوهرها على الابتكار وحل المشكلات، وليس مجرد نسخ ولصق
+              الأكواد. إن أخلاقيات المهنة تحتم على المبرمج الالتزام بأعلى معايير الأمانة العلمية والمهنية، والتي تتلخص
+              في
+              النقاط التالية:</p>
+            <ul style="list-style-type: disc; margin-right: 20px; text-align: right;">
+              <li style="margin-bottom: 10px;"><strong>احترام الملكية الفكرية:</strong> المجهود الذي يبذله شخص آخر في
+                بناء
+                موقع أو كتابة كود هو ملكية خاصة له. الاستيلاء على هذا المجهود وتقديمه باسمك دون وجه حق يعتبر سرقة صريحة
+                لحقوق الآخرين.</li>
+              <li style="margin-bottom: 10px;"><strong>الخداع وتزييف المهارات:</strong> عندما يقوم المبرمج بأخذ موقع
+                جاهز
+                (Template) أو مشروع كامل وينسبه لنفسه، فهو لا يخدع العميل أو الأستاذ فقط، بل يخدع نفسه أولاً بإيهامها
+                بامتلاك مهارات غير حقيقية، مما يضر بمستقبله المهني عند مواجهة مشكلات حقيقية تتطلب حلاً فعلياً.</li>
+              <li style="margin-bottom: 10px;"><strong>الفرق بين التعلم والسرقة:</strong> لا عيب في الاستعانة بمصادر
+                خارجية للتعلم (Open Source) أو الاقتباس مع الإشارة للمصدر (Attribution)، ولكن العيب كل العيب يكمن في
+                "الادعاء" بأن العمل من صنع يدك بالكامل وهو مأخوذ من شخص آخر.</li>
+              <li><strong>بناء السمعة:</strong> رأسمال المبرمج الحقيقي ليس الكود الذي يكتبه، بل سمعته في المجتمع التقني.
+                المبرمج الذي يُعرف عنه سرقة مجهود الغير يفقد الثقة والاحترام للأبد.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="document.getElementById('warning-overlay').style.display='none'"
+        style="margin-top: 40px; padding: 15px 40px; background: #ff0000; color: #000; border: none; font-size: 1.2em; font-weight: bold; cursor: pointer; text-transform: uppercase; transition: all 0.3s; border: 2px solid #ff0000;">
+        I Understand / موافق
+      </button>
+    </div>
+  </div>
   <h1 class='logo'>
     Solar Explorer By sacammer
   </h1>
